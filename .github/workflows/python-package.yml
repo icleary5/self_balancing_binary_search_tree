@@ -20,4 +20,4 @@ jobs:
           pip install -r requirements-dev.txt
       - name: Run tests
         run: |
-          tox -e py${{ matrix.python-version[0] }}  # or `pytest`
+          tox -e py${{ matrix.python-version }}
